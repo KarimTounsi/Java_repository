@@ -3,7 +3,7 @@ package Java.projects.game;
 import java.util.Random;
 import java.util.Scanner;
 
-public class guessingthenumber {
+public class GuessingTheNumber {
 
         static public void main (String[] args){
 
