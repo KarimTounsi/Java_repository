@@ -73,7 +73,9 @@ public class lottogame {
             if (arr[i] > 0) {
                 randomNumbers[i] = arr[i];
             }
+
         }
+        Arrays.sort(randomNumbers);
         return randomNumbers;
     }
 
@@ -81,12 +83,11 @@ public class lottogame {
 
         int win = 0;
         for (int i = 0; i < userNumbers.length; i++) {
-            for (int j = 0; i < randomNumbers.length; i++) {
+            for (int j = 0; j < randomNumbers.length; j++) {
                 if (userNumbers[i] == randomNumbers[j]) {
                     win++;
                 }
             }
-
         }
         return win;
     }
